@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Layout, Menu } from 'antd';
 import SIDER from '../constant/SIDER';
 import { Link, Switch, Route } from 'react-router-dom';
@@ -9,22 +9,19 @@ import Verbs from './verbs';
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
-class SiderDemo extends React.Component {
-  state = {
-    collapsed: false,
-  };
+const Routing = () => {
+  
+    const [collapsed, setCollapsed] = useState(false);
 
-  onCollapse = collapsed => {
+  const onCollapse = collapsed => {
     console.log(collapsed);
-    this.setState({ collapsed });
+    setCollapsed( collapsed );
   };
-
-  render() {
     return (
       <Layout style={{ minHeight: '100vh' }}>
-        <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
+        <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
           <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+          <Menu theme="dark" mode="inline">
              {
               SIDER.map( item => (
                 <SubMenu
@@ -54,10 +51,10 @@ class SiderDemo extends React.Component {
               </Switch>
             </div>
           </Content>
+          <Footer style={{ textAlign: 'center' }}>Jesús Ponce ©{new Date().getFullYear()}</Footer>
         </Layout>
       </Layout>
     );
   }
-}
 
-export default SiderDemo;
+export default Routing;
