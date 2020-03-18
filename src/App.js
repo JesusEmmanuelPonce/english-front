@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Routing from './components/layout'
+import Routing from './layout/layout'
 
 function App() {
   return (
