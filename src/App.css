@@ -1,10 +1,13 @@
-
 .layout-pb{
   margin: 24px 12px 0 12px;
-  background: #75ff70;
-  color: red;
+  background: #fff;
+  color: #000;
 }
 
-.container-layot-pb{
-  display: flex;
+.container-phrasal-pb{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
+
+
