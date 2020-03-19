@@ -1,0 +1,21 @@
+table{
+    margin-top: 16px;
+    font: 20px;
+}
+
+table tr th,
+table tr td{
+    padding: 5px 8px;
+}
+
+table tr td{
+    border-bottom: 1px solid rgba(65, 64, 64, 0.3);
+}
+
+.end-verbs{
+    color:#ff0000;
+}
+
+.end-verbs-none{
+    display: none;
+}
