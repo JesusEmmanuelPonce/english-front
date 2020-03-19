@@ -30,12 +30,12 @@ const SIDER = [
         "sub": [{
             "name" : "Regulares",
             "key"  : 4,
-            "path" : "/regular"
+            "path" : "/regular-verbs"
         },
         {
             "name" : "Irregulares",
             "key"  : 5,
-            "path" : "/irregular"
+            "path" : "/irregular-verbs"
         }]
     }
 ]
