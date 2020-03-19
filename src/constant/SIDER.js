@@ -9,18 +9,18 @@ const SIDER = [
         }]
     },
     {
-        "name" : "Palabras",
+        "name" : "Estructuras",
         "key" : 2,
         "sub": [
             {
-            "name" : "Verbos",
+            "name" : "Present Simple",
             "key"  : 2,
-            "path" : "/verbs"
+            "path" : "/present-simple"
             },
             {
-            "name" : "Numeros",
+            "name" : "Pasado Simple",
             "key"  : 3,
-            "path" : "/numeros"
+            "path" : "/past-simple"
             },
         ]
     },
