@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import Header from '../header';
 const PresentSimple = () => {
     return(
-        <>
+        <Fragment>
             <Header
              title="Present Simple"
             />
-            <h1>Presente</h1>
-        </>
+            <div>
+              hola  
+            </div>
+        </Fragment>
     )
 }
 
