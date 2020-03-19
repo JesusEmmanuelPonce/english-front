@@ -3,6 +3,8 @@ import { Switch as Router, Route } from 'react-router-dom';
 import Get from '../components/get';
 import PresentSimple from '../components/Structures/PresentSimple';
 import PastSimple from '../components/Structures/PastSimple';
+import RegularVerbs from '../components/Verbs/regularVerbs';
+import IrregularVerbs from '../components/Verbs/irregularVerbs';
 
 const Routes = () => {
     return(
@@ -10,6 +12,8 @@ const Routes = () => {
             <Route exact path="/get" component={Get} />
             <Route exact path="/present-simple" component={PresentSimple}/>
             <Route exact path="/past-simple" component={PastSimple}/>
+            <Route exact path="/regular-verbs" component={RegularVerbs}/>
+            <Route exact path="/irregular-verbs" component={IrregularVerbs}/>
         </Router>
     )
 }
