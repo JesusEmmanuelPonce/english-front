@@ -24,11 +24,12 @@ const Get = () => {
             { getPhrasal.map(item => (
                 <div className="site-card-border-less-wrapper card-pb">
                     <Card title={item.phrase} bordered={false} >
+                        <span className="label-card-pb">Significado</span>
                         <p>{item.mean_spanish}</p>
-                        <p>{item.mean_french}</p>
+                        <span className="label-card-pb">Ejemplo en ingles</span>
                         <p>{item.example_english}</p>
+                        <span className="label-card-pb">Ejemplo en español</span>
                         <p>{item.example_spanish}</p>
-                        <p>{item.example_french}</p>
                     </Card>
                 </div>
                 ))
