@@ -10,7 +10,7 @@ const IrregularVerbs = () => {
 
     useEffect(()=> {
         const getIrregularVerbs = async() =>{
-            const resultado = await axios.get('http://localhost:4000/irregular-verbs');
+            const resultado = await axios.get('https://backend-english-pb.herokuapp.com/irregular-verbs');
             setIrregularVerbs(resultado.data.IrregularVerbs);
         }
         getIrregularVerbs();
