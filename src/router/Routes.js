@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch as Router, Route } from 'react-router-dom';
-import Get from '../components/get';
+import Get from '../components/PhrasalVerbs/Get';
 import PresentSimple from '../components/Structures/PresentSimple';
 import PastSimple from '../components/Structures/PastSimple';
 import RegularVerbs from '../components/Verbs/regularVerbs';
