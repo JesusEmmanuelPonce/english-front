@@ -1,0 +1,10 @@
+.container-phrasal-pb{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card-pb{
+    border: .5px solid rgba(0, 0, 0, .1);
+    box-shadow: 4px 2px rgba(0,0,0,.2);
+}
