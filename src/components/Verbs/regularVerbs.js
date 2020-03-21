@@ -9,7 +9,7 @@ const RegularVerbs = () => {
 
     useEffect(()=> {
         const getRegularVerbs = async() =>{
-            const resultado = await axios.get('http://localhost:4000/regular-verbs');
+            const resultado = await axios.get('https://backend-english-pb.herokuapp.com/regular-verbs');
             setRegularVerbs(resultado.data.RegularVerbs);
         }
         getRegularVerbs();
