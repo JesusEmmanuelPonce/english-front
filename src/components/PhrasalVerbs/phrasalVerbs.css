@@ -1,10 +1,20 @@
+p{
+    color: #000;
+}
+
 .container-phrasal-pb{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 20px;
 }
 
 .card-pb{
     border: .5px solid rgba(0, 0, 0, .1);
     box-shadow: 4px 2px rgba(0,0,0,.2);
+}
+
+.label-card-pb{
+    font-size: 12px;
+    font-weight: 900;
+    color: #ff0000;
 }
