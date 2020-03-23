@@ -1,11 +1,11 @@
 const SIDER = [
     {
         "name" : "Phrasal verbs",
-        "key" : 1,
+        "key"  : 1,
         "sub": [{
-            "name" : "Get",
+            "name" : "Menu",
             "key"  : 1,
-            "path" : "/get"
+            "path" : "/menu-phrasal-verbs"
         }]
     },
     {
