@@ -18,3 +18,17 @@ p{
     font-weight: 900;
     color: #ff0000;
 }
+
+.squad{
+    width: 150px;
+    height: 110px;
+    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 16px;
+    font-size: 24px;
+    font-weight: 500;
+}
