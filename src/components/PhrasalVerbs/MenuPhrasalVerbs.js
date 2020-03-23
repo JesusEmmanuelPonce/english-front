@@ -1,14 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import MENU_PHRASAL_VERBS from '../../constant/MENU_PHRASAL_VERBS';
+
 const MenuPhrasalVerbs = () => {
     return(
-        <>
-            <Link to="/get">
-                <div className="squad">
-                    <span>Get</span>
-                </div>
-            </Link>
-        </>
+            <div className="container-menu-phrasal-pb">
+             {
+                MENU_PHRASAL_VERBS.map(item => (     
+                    <Link to={item.route} key={item.name}>
+                        <div className="square-menu-pb">
+                            <span>{item.name}</span>
+                        </div>
+                    </Link>
+                ))
+            }
+        </div>
     )
 }
 

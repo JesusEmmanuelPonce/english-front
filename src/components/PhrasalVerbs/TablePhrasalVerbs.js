@@ -5,7 +5,7 @@ const TablePharasalVerbs = ({ table }) => {
     return(
         <div className="container-phrasal-pb">
             { table.map(item => (
-                <div className="site-card-border-less-wrapper card-pb">
+                <div className="site-card-border-less-wrapper card-pb" key={item.id}>
                     <Card title={item.phrase} bordered={false} >
                         <span className="label-card-pb">Significado</span>
                         <p>{item.mean_spanish}</p>
