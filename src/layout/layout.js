@@ -3,6 +3,7 @@ import { Layout, Menu } from 'antd';
 import SIDER from '../constant/SIDER';
 import { Link } from 'react-router-dom';
 import Routes from '../router/Routes';
+import { ContainerOutlined } from '@ant-design/icons';
 
 const { Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -27,6 +28,7 @@ const Routing = () => {
                 key={item.key}
                 title={
                   <span>
+                    <ContainerOutlined />
                     <span>{item.name}</span>
                   </span>
                 }
