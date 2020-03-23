@@ -9,8 +9,7 @@ const PresentSimple = () => {
              title="Present Simple"
             />
             <div>
-             hola de nuevo ahsdoahsdoahisd lorem    
-    
+             Present
             </div>
         </Fragment>
     )
