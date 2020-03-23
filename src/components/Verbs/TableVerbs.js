@@ -5,20 +5,24 @@ const TableVerbs = ({table, regular}) => {
   return(
     <div>
       <table>
-          <tr>
-            <th>Significado</th>
-            <th>Infinitivo</th>
-            <th>Pasado</th>
-            <th>Participio</th>
-          </tr>
+          <thead>
+            <tr>
+              <th>Significado</th>
+              <th>Infinitivo</th>
+              <th>Pasado</th>
+              <th>Participio</th>
+            </tr>
+          </thead>
           {
             table.map ( item => (
-            <tr>
-              <td>{item.translation}</td>
-              <td>{item.infinitive}</td>
-              <td>{item.past}<span className={ `${regular ? 'end-verbs' :  'end-verbs-none'}`}>ed</span></td>
-              <td>{item.participle}<span className={ `${regular ? 'end-verbs' :  'end-verbs-none'}`}>ed</span></td>
-            </tr>
+              <tbody key={item.id}>
+                <tr>
+                  <td>{item.translation}</td>
+                  <td>{item.infinitive}</td>
+                  <td>{item.past}<span className={ `${regular ? 'end-verbs' :  'end-verbs-none'}`}>ed</span></td>
+                  <td>{item.participle}<span className={ `${regular ? 'end-verbs' :  'end-verbs-none'}`}>ed</span></td>
+                </tr>
+              </tbody>
             ))
           }
       </table>
