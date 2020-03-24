@@ -6,7 +6,6 @@ import Routes from '../router/Routes';
 import { ContainerOutlined } from '@ant-design/icons';
 
 const { Content, Footer, Sider } = Layout;
-const { SubMenu } = Menu;
 
 const Routing = () => {
   
@@ -21,26 +20,16 @@ const Routing = () => {
       <Layout style={{ minHeight: '100vh' }}>
         <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
           <div className="logo" />
-          <Menu theme="dark" mode="inline">
-             {
-              SIDER.map( item => (
-                <SubMenu
-                key={item.key}
-                title={
-                  <span>
+            <Menu theme="dark" mode="inline">
+            {
+                SIDER.map(item => (
+                  <Menu.Item key={item.key}>   
                     <ContainerOutlined />
-                    <span>{item.name}</span>
-                  </span>
-                }
-                >
-                { item.sub.map( item =>(
-                  <Menu.Item key={item.key}>
                     <Link to={item.path}>{item.name}</Link>
-                  </Menu.Item> 
-                ))}
-               </SubMenu> 
-               ))}
-              </Menu>
+                  </Menu.Item>
+                ))
+            }    
+            </Menu>
         </Sider>
         <Layout className="site-layout">
           <Content style={{ margin: '0 16px' }}>
