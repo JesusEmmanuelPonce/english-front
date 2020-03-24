@@ -21,14 +21,13 @@ p{
 
 .container-menu-phrasal-pb{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .square-menu-pb{
-    width: 150px;
-    height: 110px;
-    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
+    height: 140px;
     color: #fff;
     border-radius: 15px;
     display: flex;
@@ -37,4 +36,17 @@ p{
     padding: 0 16px;
     font-size: 24px;
     font-weight: 500;
+}
+
+.color-blue-pb{
+    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
+}
+
+.color-red-pb{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(223, 219, 4) 100%);
+}
+
+.square-menu-pb:hover{
+    margin-top: -15px;
+    transition: ease-in-out .2s;
 }
