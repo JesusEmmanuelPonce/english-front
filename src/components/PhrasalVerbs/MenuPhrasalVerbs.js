@@ -8,7 +8,7 @@ const MenuPhrasalVerbs = () => {
              {
                 MENU_PHRASAL_VERBS.map(item => (     
                     <Link to={item.route} key={item.name}>
-                        <div className="square-menu-pb">
+                        <div className={`${item.base} ${item.color}`}>
                             <span>{item.name}</span>
                         </div>
                     </Link>
