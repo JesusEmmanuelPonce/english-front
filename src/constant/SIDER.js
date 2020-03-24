@@ -2,41 +2,17 @@ const SIDER = [
     {
         "name" : "Phrasal verbs",
         "key"  : 1,
-        "sub": [{
-            "name" : "Menu",
-            "key"  : 1,
-            "path" : "/menu-phrasal-verbs"
-        }]
+        "path" : "/menu-phrasal-verbs"
     },
     {
         "name" : "Estructuras",
-        "key" : 2,
-        "sub": [
-            {
-            "name" : "Present Simple",
-            "key"  : 2,
-            "path" : "/present-simple"
-            },
-            {
-            "name" : "Pasado Simple",
-            "key"  : 3,
-            "path" : "/past-simple"
-            },
-        ]
+        "key"  : 2,
+        "path" : "/menu-estructuras"
     },
     {
         "name" : "Verbos",
-        "key" : 3,
-        "sub": [{
-            "name" : "Regulares",
-            "key"  : 4,
-            "path" : "/regular-verbs"
-        },
-        {
-            "name" : "Irregulares",
-            "key"  : 5,
-            "path" : "/irregular-verbs"
-        }]
+        "key"  : 3,
+        "path" : "/menu-verbs"
     }
 ]
 
