@@ -22,7 +22,7 @@ const Routing = () => {
           }}
         >
         <div className="logo" />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+        <Menu theme="dark" mode="inline">
             {
               SIDER.map(item => (
                 <Menu.Item key={item.key}>   
