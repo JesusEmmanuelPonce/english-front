@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './phrasalVerbs.css';
-import TablePharasalVerbs from './TablePhrasalVerbs';
+import CardPharasalVerbs from './CardPharasalVerbs';
 import Loader from '../../loader/loader';
 
 const Get = () => {
@@ -24,7 +24,7 @@ const Get = () => {
         <div>
             {
                 loading ? <Loader loading={loading}/> 
-                        : <TablePharasalVerbs table={getPhrasal}/>
+                        : <CardPharasalVerbs table={getPhrasal}/>
             }
         </div>
     )

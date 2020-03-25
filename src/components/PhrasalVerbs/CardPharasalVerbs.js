@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from 'antd';
 
-const TablePharasalVerbs = ({ table }) => {
+const CardPharasalVerbs = ({ table }) => {
     return(
         <div className="container-phrasal-pb">
             { table.map(item => (
@@ -20,4 +20,4 @@ const TablePharasalVerbs = ({ table }) => {
     )
 }
 
-export default TablePharasalVerbs;
+export default CardPharasalVerbs;
