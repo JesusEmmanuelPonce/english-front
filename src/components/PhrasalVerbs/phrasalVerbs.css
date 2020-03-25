@@ -26,6 +26,30 @@ p{
     margin-top: 20px;
 }
 
+@media screen and (min-width: 360px) {
+    .container-menu-phrasal-pb{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-menu-phrasal-pb{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container-menu-phrasal-pb{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 20px;
+    }
+}
+
 .square-menu-pb{
     height: 140px;
     color: #fff;
