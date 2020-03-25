@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Layout, Menu } from 'antd';
 import SIDER from '../constant/SIDER';
 import { Link } from 'react-router-dom';
@@ -8,38 +8,40 @@ import { ContainerOutlined } from '@ant-design/icons';
 const { Content, Footer, Sider } = Layout;
 
 const Routing = () => {
-  
-  const [collapsed, setCollapsed] = useState(false);
-
-  const onCollapse = collapsed => {
-    console.log(collapsed);
-    setCollapsed( collapsed );
-  };
 
     return (
       <Layout style={{ minHeight: '100vh' }}>
-        <Sider collapsible collapsed={collapsed} onCollapse={onCollapse}>
-          <div className="logo" />
-            <Menu theme="dark" mode="inline">
+        <Sider
+          breakpoint="lg"
+          collapsedWidth="0"
+          onBreakpoint={broken => {
+            console.log(broken);
+          }}
+          onCollapse={(collapsed, type) => {
+            console.log(collapsed, type);
+          }}
+        >
+        <div className="logo" />
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
             {
-                SIDER.map(item => (
-                  <Menu.Item key={item.key}>   
-                    <ContainerOutlined />
-                    <Link to={item.path}>{item.name}</Link>
-                  </Menu.Item>
-                ))
+              SIDER.map(item => (
+                <Menu.Item key={item.key}>   
+                  <ContainerOutlined />
+                  <Link to={item.path}>{item.name}</Link>
+                </Menu.Item>
+              ))
             }    
-            </Menu>
-        </Sider>
-        <Layout className="site-layout">
-          <Content style={{ margin: '0 16px' }}>
-            <div className="site-layout-background layout-pb" style={{ padding: 24, minHeight: 360 }}>
-                <Routes/>
-            </div>
-          </Content>
-          <Footer style={{ textAlign: 'center' }}>Jesús Ponce ©{new Date().getFullYear()}</Footer>
-        </Layout>
+        </Menu>
+      </Sider>
+      <Layout> 
+        <Content style={{ margin: '0 16px' }}>
+          <div className="site-layout-background layout-pb" style={{ padding: 24, minHeight: 360 }}>
+            <Routes/>
+          </div>
+        </Content>
+        <Footer style={{ textAlign: 'center' }}>Jesús Ponce ©{new Date().getFullYear()}</Footer>
       </Layout>
+    </Layout>
     );
   }
 
