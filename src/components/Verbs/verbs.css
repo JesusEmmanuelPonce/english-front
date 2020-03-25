@@ -1,19 +1,40 @@
-.container-verbs-pb{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 100vh;
-    gap: 2em;
-}
 
-.container-regular-pb{
+.content-verbs-pb{
+    height: 160px;
+    padding: 12px;
     background: red;
-    grid-column-start: 2;
-    grid-row-start: 3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.container-irregular-pb{
-    background: blue;
-    grid-column-start: 3;
-    grid-row-start: 3;
+.letter-verbs{
+    color: #fff;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 360px) {
+    .container-verbs-pb{
+        display: block;
+        width: 100%;
+    }
+
+    .square-verbs-pb{
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-verbs-pb{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    .square-verbs-pb{
+        width: 40%;
+        margin-top: 64px;
+    }    
 }
