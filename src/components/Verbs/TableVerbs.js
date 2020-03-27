@@ -3,8 +3,8 @@ import './verbsStyle.css';
 
 const TableVerbs = ({table, regular}) => {
   return(
-    <div>
-      <table>
+    <div className="container-table-verbs-pb">
+      <table className="table-verbs-pb">
           <thead>
             <tr>
               <th>Significado</th>

@@ -1,6 +1,15 @@
-table{
-    margin-top: 16px;
-    font: 20px;
+@media screen and (min-width: 360px) {
+    table{
+        margin-top: 10px;
+        font-size: 11px;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    table{
+        font-size: 16px;
+        margin-top: 16px;
+    }
 }
 
 table tr th,
