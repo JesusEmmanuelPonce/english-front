@@ -35,7 +35,7 @@ const Routing = () => {
       </Sider>
       <Layout> 
         <Content style={{ margin: '0 16px' }}>
-          <div className="site-layout-background layout-pb" style={{ padding: 24, minHeight: 360 }}>
+          <div className="site-layout-background layout-pb" style={{ padding: 24, minHeight: 500 }}>
             <Routes/>
           </div>
         </Content>
