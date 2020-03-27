@@ -13,6 +13,11 @@ const SIDER = [
         "name" : "Verbos",
         "key"  : 3,
         "path" : "/menu-verbs"
+    },
+    {
+        "name" : "Vocabulario",
+        "key"  : 4,
+        "path" : "/menu-vocabulary"
     }
 ]
 
