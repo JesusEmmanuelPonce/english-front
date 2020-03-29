@@ -1,8 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './main.css';
+import { Modal, Button, Tooltip  } from 'antd';
+import { QuestionOutlined } from '@ant-design/icons';
 
 const Main = () => {
+
+    const [visible, setVisible] = useState(false);
+
+    const showModal = () => {
+        setVisible(true)
+      };
+
+    const handleOk = e => {
+        setVisible(false);
+      };
+
+    const handleCancel = e => {
+        setVisible(false);
+      };
+
     return(
-        <h1>Seleccione una opcion</h1>
+        <div className="container-main-pb">
+            <div className="container-help-pb">
+                <Tooltip title="Ayuda">
+                    <Button
+                        onClick={showModal}
+                        shape="circle"
+                        type="dashed"
+                    >
+                        <QuestionOutlined/>
+                    </Button>
+                </Tooltip>
+            </div>
+            <div className="container-img-pb">
+                <img className="img-main" src="https://english-pb.s3.amazonaws.com/bienvenido.png" alt="Welcome"/>
+            </div>
+            <Modal
+                title="Ayuda"
+                visible={visible}
+                onOk={handleOk}
+                onCancel={handleCancel}
+                >
+                <p>Este es un sitio para consultar vocabulario, 
+                    estructuras gramaticales, verbos y más sin necesidad de buscar 
+                    en la web</p>
+            </Modal>
+        </div>
     )
 }
 
