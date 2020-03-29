@@ -38,3 +38,36 @@
         margin-top: 64px;
     }    
 }
+
+/*TABLE*/
+
+@media screen and (min-width: 360px) {
+    table{
+        margin-top: 10px;
+        font-size: 11px;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    table{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+}
+
+table tr th,
+table tr td{
+    padding: 5px 8px;
+}
+
+table tr td{
+    border-bottom: 1px solid rgba(65, 64, 64, 0.3);
+}
+
+.end-verbs{
+    color:#ff0000;
+}
+
+.end-verbs-none{
+    display: none;
+}

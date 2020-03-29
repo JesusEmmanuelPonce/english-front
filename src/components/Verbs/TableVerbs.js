@@ -1,5 +1,5 @@
 import React from 'react';
-import './verbsStyle.css';
+import './verbs.css';
 
 const TableVerbs = ({table, regular}) => {
   return(
