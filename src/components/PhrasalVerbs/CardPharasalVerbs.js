@@ -3,7 +3,7 @@ import { Card } from 'antd';
 
 const CardPharasalVerbs = ({ table }) => {
     return(
-        <div className="container-phrasal-pb">
+        <div className="container-card-phrasal-pb">
             { table.map(item => (
                 <div className="site-card-border-less-wrapper card-pb" key={item.id}>
                     <Card title={item.phrase} bordered={false} >
