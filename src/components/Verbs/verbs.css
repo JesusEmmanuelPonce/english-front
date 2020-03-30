@@ -2,11 +2,16 @@
 .content-verbs-pb{
     height: 160px;
     padding: 12px;
-    background: red;
+    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    transition: .3s;
+}
+
+.content-verbs-pb:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 360px) {
