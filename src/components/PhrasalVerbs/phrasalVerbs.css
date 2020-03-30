@@ -2,30 +2,6 @@ p{
     color: #000;
 }
 
-@media screen and (min-width: 360px) {
-    .container-phrasal-pb{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container-phrasal-pb{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container-phrasal-pb{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-}
-
 .card-pb{
     border: .5px solid rgba(0, 0, 0, .1);
     box-shadow: 4px 2px rgba(0,0,0,.2);
@@ -37,23 +13,24 @@ p{
     color: #ff0000;
 }
 
-.container-menu-phrasal-pb{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-}
-
 @media screen and (min-width: 360px) {
     .container-menu-phrasal-pb{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 12px auto;
     }
+
+    .square-menu-pb{
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
     .container-menu-phrasal-pb{
+        width: 95%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 20px;
@@ -69,6 +46,7 @@ p{
 }
 
 .square-menu-pb{
+    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
     height: 140px;
     color: #fff;
     border-radius: 15px;
@@ -79,14 +57,6 @@ p{
     font-size: 24px;
     font-weight: 500;
     transition: .3s;
-}
-
-.color-blue-pb{
-    background: linear-gradient(90deg, rgba(9,92,121,1) 0%, rgba(0,185,255,1) 100%);
-}
-
-.color-red-pb{
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgb(223, 219, 4) 100%);
 }
 
 .square-menu-pb:hover{

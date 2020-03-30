@@ -9,11 +9,6 @@
     align-items: flex-end;
 }
 
-.letter-verbs{
-    color: #fff;
-    font-size: 24px;
-}
-
 @media screen and (min-width: 360px) {
     .container-verbs-pb{
         display: block;
@@ -21,8 +16,14 @@
     }
 
     .square-verbs-pb{
-        width: 100%;
+        margin: 0 auto;
+        width: 75%;
         margin-top: 12px;
+    }
+
+    .letter-verbs{
+        color: #fff;
+        font-size: 20px;
     }
 }
 
@@ -36,7 +37,11 @@
     .square-verbs-pb{
         width: 40%;
         margin-top: 64px;
-    }    
+    }   
+    
+    .letter-verbs{
+        font-size: 24px;
+    }
 }
 
 /*TABLE*/
