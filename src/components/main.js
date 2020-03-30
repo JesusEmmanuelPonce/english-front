@@ -41,9 +41,7 @@ const Main = () => {
                 onOk={handleOk}
                 onCancel={handleCancel}
                 >
-                <p>Este es un sitio para consultar vocabulario, 
-                    estructuras gramaticales, verbos y más sin necesidad de buscar 
-                    en la web</p>
+                <p>Escoge una opción</p>
             </Modal>
         </div>
     )
