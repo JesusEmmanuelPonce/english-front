@@ -19,12 +19,13 @@ const Routes = () => {
             <Route exact path="/menu-phrasal-verbs" component={MenuPhrasalVerbs}/>
             <Route exact path="/menu-verbs" component={MenuVerbs}/>
             <Route exact path="/menu-estructuras" component={MenuStructures}/>
+            <Route exact path="/menu-vocabulary" component={Menu_Vocabulary}/>
             <Route exact path="/get" component={Get} />
             <Route exact path="/present-simple" component={PresentSimple}/>
             <Route exact path="/past-simple" component={PastSimple}/>
             <Route exact path="/regular-verbs" component={RegularVerbs}/>
             <Route exact path="/irregular-verbs" component={IrregularVerbs}/>
-            <Route exact path="/menu-vocabulary" component={Menu_Vocabulary}/>
+            <Route exact path="/nationalities" component={Nationalities}/>
         </Router>
     )
 }
