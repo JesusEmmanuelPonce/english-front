@@ -1,7 +1,11 @@
 const MENU_VOCABULARY = [
     {
-        "name" : "Familia",
+        "name"  : "Familia",
         "route" : "/family"
+    },
+    {
+        "name"  : "Nacionalidades",
+        "route" : "/nationalities"
     }
 ]
 
