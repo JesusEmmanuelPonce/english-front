@@ -12,7 +12,7 @@ const IrregularVerbs = () => {
     useEffect(()=> {
         const getIrregularVerbs = async() =>{
             const resultado = await axios.get('https://backend-english-pb.herokuapp.com/irregular-verbs');
-            setIrregularVerbs(resultado.data.IrregularVerbs);
+            setIrregularVerbs(resultado.data.irregularVerbs);
             setLoading(false);
         }
         getIrregularVerbs();

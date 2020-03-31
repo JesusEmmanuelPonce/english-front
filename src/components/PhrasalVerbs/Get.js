@@ -12,7 +12,7 @@ const Get = () => {
     useEffect(()=> {
         const getGetPhrasal = async() =>{
             const resultado = await axios.get('https://backend-english-pb.herokuapp.com/get-phrases');
-            setGetPhrasal(resultado.data.GetPhrases);
+            setGetPhrasal(resultado.data.getPhrases);
             setLoading(false);
         }
         getGetPhrasal();

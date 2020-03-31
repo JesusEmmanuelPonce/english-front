@@ -12,7 +12,7 @@ const RegularVerbs = () => {
     useEffect(()=> {
         const getRegularVerbs = async() =>{
             const resultado = await axios.get('https://backend-english-pb.herokuapp.com/regular-verbs');
-            setRegularVerbs(resultado.data.RegularVerbs);
+            setRegularVerbs(resultado.data.regularVerbs);
             setLoading(false);
         }
         getRegularVerbs();
