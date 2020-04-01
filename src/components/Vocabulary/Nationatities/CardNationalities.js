@@ -7,11 +7,12 @@ const TableNationalities = ({ card }) => {
           {
             card.map( item => (
                 <div className="card-nationality" key={item.id}>
-                    <img className="img-nationalities-pb"
-                        alt="example"
-                        src={item.flag}
-                    />
-                    
+                    <div className="container-img-pb">
+                        <img className="img-nationalities-pb"
+                            alt="example"
+                            src={item.flag}
+                        />
+                    </div>
                     <div className="container-tag-pb">
                         <span className="tag-card-pb">Country</span>
                         <p>{item.country_english}</p>
