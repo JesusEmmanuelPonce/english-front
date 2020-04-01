@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import Header from '../../header';
 import Loader from '../../../loader/loader';
-import TableNationalities from './TableNationalities';
+import CardNationalities from './CardNationalities';
 
 const Nationalities = () =>{
 
@@ -28,8 +28,8 @@ const Nationalities = () =>{
             />
             {
                 loading ? <Loader loading={loading}/>
-                        : <TableNationalities
-                            table={nationalities}
+                        : <CardNationalities
+                            card={nationalities}
                           />
             }
         </>

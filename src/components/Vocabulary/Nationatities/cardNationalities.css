@@ -1,0 +1,20 @@
+.container-card-pb{
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.img-nationalities-pb{
+    width: 100%;   
+    height: 100px;
+}
+.container-tag-pb{
+    margin-top: 10px;
+}
+
+.tag-card-pb{
+    color: red;
+    font-size: 12px;
+    font-weight: 900;
+}
