@@ -10,6 +10,7 @@ import PresentSimple from '../components/Structures/PresentSimple';
 import PastSimple from '../components/Structures/PastSimple';
 import RegularVerbs from '../components/Verbs/regularVerbs';
 import IrregularVerbs from '../components/Verbs/irregularVerbs';
+import Family from '../components/Vocabulary/Family/family';
 import Nationalities from '../components/Vocabulary/Nationatities/nationalities';
 
 const Routes = () => {
@@ -25,6 +26,7 @@ const Routes = () => {
             <Route exact path="/past-simple" component={PastSimple}/>
             <Route exact path="/regular-verbs" component={RegularVerbs}/>
             <Route exact path="/irregular-verbs" component={IrregularVerbs}/>
+            <Route exact path="/family" component={Family}/>
             <Route exact path="/nationalities" component={Nationalities}/>
         </Router>
     )

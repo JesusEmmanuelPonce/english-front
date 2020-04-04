@@ -12,8 +12,8 @@
     }
 
     .img-nationalities-pb{
-        width: 100%;
-        height: 110px;
+        width: 60%;
+        height: 85px;
     }
 }
 
@@ -26,8 +26,7 @@
     }
 
     .img-nationalities-pb{
-        width: 100%;
-        height: 110px;
+        width: 85%;
     }
 }
 
@@ -36,11 +35,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 90%;
-    }
-
-    .img-nationalities-pb{
-        width: 100%;
-        height: 110px;
     }
 }
 
@@ -57,9 +51,9 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    /* .img-nationalities-pb{
-        height: 140px;
-    } */
+    .img-nationalities-pb{
+        width: 100%;
+    }
 }
 
 .container-tag-pb{

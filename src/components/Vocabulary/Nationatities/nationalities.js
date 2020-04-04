@@ -19,8 +19,6 @@ const Nationalities = () =>{
         getNationalities();
     },[]);
 
-    console.log(nationalities);
-
     return(
         <>
             <Header
