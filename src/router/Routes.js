@@ -5,7 +5,8 @@ import MenuPhrasalVerbs from '../components/PhrasalVerbs/MenuPhrasalVerbs';
 import MenuVerbs from '../components/Verbs/MenuVerbs';
 import MenuStructures from '../components/Structures/MenuStructures';
 import Menu_Vocabulary from '../components/Vocabulary/MenuVocabulary';
-import Get from '../components/PhrasalVerbs/Get';
+import Get from '../components/PhrasalVerbs/get/Get';
+import Put from '../components/PhrasalVerbs/put/Put';
 import PresentSimple from '../components/Structures/PresentSimple';
 import PastSimple from '../components/Structures/PastSimple';
 import RegularVerbs from '../components/Verbs/regularVerbs';
@@ -22,6 +23,7 @@ const Routes = () => {
             <Route exact path="/menu-estructuras" component={MenuStructures}/>
             <Route exact path="/menu-vocabulary" component={Menu_Vocabulary}/>
             <Route exact path="/get" component={Get} />
+            <Route exact path="/put" component={Put} />
             <Route exact path="/present-simple" component={PresentSimple}/>
             <Route exact path="/past-simple" component={PastSimple}/>
             <Route exact path="/regular-verbs" component={RegularVerbs}/>
