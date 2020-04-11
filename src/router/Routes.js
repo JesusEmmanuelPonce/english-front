@@ -3,12 +3,12 @@ import { Switch as Router, Route } from 'react-router-dom';
 import Main from '../components/main';
 import MenuPhrasalVerbs from '../components/PhrasalVerbs/MenuPhrasalVerbs';
 import MenuVerbs from '../components/Verbs/MenuVerbs';
-import MenuStructures from '../components/Structures/MenuStructures';
+import MenuGrammar from '../components/Grammar/MenuGrammar';
 import Menu_Vocabulary from '../components/Vocabulary/MenuVocabulary';
 import Get from '../components/PhrasalVerbs/get/Get';
 import Put from '../components/PhrasalVerbs/put/Put';
-import PresentSimple from '../components/Structures/PresentSimple';
-import PastSimple from '../components/Structures/PastSimple';
+import PresentSimple from '../components/Grammar/PresentSimple';
+import PastSimple from '../components/Grammar/PastSimple';
 import RegularVerbs from '../components/Verbs/regularVerbs';
 import IrregularVerbs from '../components/Verbs/irregularVerbs';
 import Family from '../components/Vocabulary/Family/family';
@@ -20,7 +20,7 @@ const Routes = () => {
             <Route exact path="/" component={Main}/>
             <Route exact path="/menu-phrasal-verbs" component={MenuPhrasalVerbs}/>
             <Route exact path="/menu-verbs" component={MenuVerbs}/>
-            <Route exact path="/menu-estructuras" component={MenuStructures}/>
+            <Route exact path="/menu-grammar" component={MenuGrammar}/>
             <Route exact path="/menu-vocabulary" component={Menu_Vocabulary}/>
             <Route exact path="/get" component={Get} />
             <Route exact path="/put" component={Put} />

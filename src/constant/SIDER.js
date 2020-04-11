@@ -5,9 +5,9 @@ const SIDER = [
         "path" : "/menu-phrasal-verbs"
     },
     {
-        "name" : "Estructuras",
+        "name" : "Gramática",
         "key"  : 2,
-        "path" : "/menu-estructuras"
+        "path" : "/menu-grammar"
     },
     {
         "name" : "Verbos",
