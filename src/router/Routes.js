@@ -7,6 +7,7 @@ import MenuGrammar from '../components/Grammar/MenuGrammar';
 import Menu_Vocabulary from '../components/Vocabulary/MenuVocabulary';
 import Get from '../components/PhrasalVerbs/get/Get';
 import Put from '../components/PhrasalVerbs/put/Put';
+import Pronouns from '../components/Grammar/Pronouns';
 import PresentSimple from '../components/Grammar/PresentSimple';
 import PastSimple from '../components/Grammar/PastSimple';
 import RegularVerbs from '../components/Verbs/regularVerbs';
@@ -24,6 +25,7 @@ const Routes = () => {
             <Route exact path="/menu-vocabulary" component={Menu_Vocabulary}/>
             <Route exact path="/get" component={Get} />
             <Route exact path="/put" component={Put} />
+            <Route exact path="/pronouns" component={Pronouns} />
             <Route exact path="/present-simple" component={PresentSimple}/>
             <Route exact path="/past-simple" component={PastSimple}/>
             <Route exact path="/regular-verbs" component={RegularVerbs}/>

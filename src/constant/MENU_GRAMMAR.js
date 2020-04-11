@@ -1,5 +1,9 @@
 const MENU_GRAMMAR = [
     {
+        "name"  : "Pronombres",
+        "route" : "/pronouns",
+    },
+    {
         "name"  : "Presente simple",
         "route" : "/present-simple",
     },
