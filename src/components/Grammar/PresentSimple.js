@@ -9,7 +9,9 @@ const PresentSimple = () => {
              title="Present Simple"
             />
             <div>
-             Present
+                <div>
+                    I play with my brother - Yo juego con mi hermano                    
+                </div>
             </div>
         </Fragment>
     )

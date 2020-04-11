@@ -9,7 +9,7 @@ const MenuGrammar = () =>{
                     MENU_GRAMMAR.map(item => (     
                         <Link to={item.route} key={item.name}>
                             <div className="square-menu-pb">
-                                <span>{item.name}</span>
+                                <span className="tag-name-menu">{item.name}</span>
                             </div>
                         </Link>
                     ))

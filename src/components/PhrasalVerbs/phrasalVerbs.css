@@ -47,7 +47,7 @@ p{
 
 @media screen and (min-width: 320px) {
     
-    span{
+    .tag-name-menu{
         font-size: 12px;
     }
 
@@ -66,7 +66,7 @@ p{
 
 @media screen and (min-width: 360px) {
 
-    span{
+    .tag-name-menu{
         font-size: 16px;
     }
 
@@ -85,7 +85,7 @@ p{
 
 @media screen and (min-width: 480px) {
 
-    span{
+    .tag-name-menu{
         font-size: 20px;
         font-weight: 400;
     }
@@ -101,7 +101,7 @@ p{
 
 @media screen and (min-width: 768px) {
 
-    span{
+    .tag-name-menu{
         font-size: 24px;
     }
 
