@@ -7,7 +7,11 @@ const PastSiemple = () => {
             <Header
                 title="Past simple"
             />
-            <h1>Pasado</h1>
+            <div>
+               <div>
+                    I played with my brother - Yo jugué con mi hermano                    
+                </div>
+            </div>
         </>
     )
 }
