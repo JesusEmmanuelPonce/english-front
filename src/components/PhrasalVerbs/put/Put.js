@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../phrasalVerbs.css';
+import Header from '../../header';
 import CardPharasalVerbs from '../CardPharasalVerbs';
 import Loader from '../../../loader/loader';
 
@@ -19,12 +20,13 @@ const Put = () => {
     },[]) 
 
     return(
-        <div>
+        <>
+            <Header title="PUT"/>
             {
                 loading ? <Loader loading={loading}/> 
                         : <CardPharasalVerbs table={putPhrasal}/>
             }
-        </div>
+        </>
     )
 }
 

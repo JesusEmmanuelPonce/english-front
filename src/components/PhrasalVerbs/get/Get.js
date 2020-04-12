@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../phrasalVerbs.css';
+import Header from '../../header';
 import CardPharasalVerbs from '../CardPharasalVerbs';
 import Loader from '../../../loader/loader';
 
@@ -18,15 +19,14 @@ const Get = () => {
         getGetPhrasal();
     },[]) 
 
-    // console.log(getPhrasal);
-
     return(
-        <div>
+        <>
+            <Header title="GET"/>
             {
                 loading ? <Loader loading={loading}/> 
                         : <CardPharasalVerbs table={getPhrasal}/>
             }
-        </div>
+        </>
     )
 }
 
