@@ -1,23 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import React from 'react';
+import './family.css'
 import Header from '../../header';
-import Loader from '../../../loader/loader';
-import TableFamily from './tableFamily';
+import FAMILY from '../../../constant/FAMILY';
  
 const Family = () => {
-
-    const [family, setFamily] = useState([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(()=>{
-        const getFamily = async() =>{
-            const resultado = await axios.get('https://backend-english-pb.herokuapp.com/family');
-            setFamily(resultado.data.family);
-            setLoading(false);
-        }
-
-        getFamily();
-    },[]);
 
     return(
         <>
@@ -25,12 +11,16 @@ const Family = () => {
                 title="Familia"
             />
 
-            {
-                loading ? <Loader loading={loading}/>
-                        : <TableFamily 
-                            table={family}
-                        />
-            }
+            <div className="container-family-pb">
+                {
+                    FAMILY.map(item=>(
+                        <div className="box-family-pb" key={item.member_en}>
+                            <span className="family-tag-pb">{item.member_en}</span> - <span>{item.member_sp}</span>
+                        </div>
+                    ))
+                }
+            </div>
+
         </>
 
     )

@@ -1,3 +1,47 @@
-.container-family-pb{
-    margin-top: 16px;
+@media screen and (min-width: 360px) {
+    .container-family-pb{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }   
 }
+
+
+@media screen and (min-width: 480px) {
+    .container-family-pb{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+
+@media screen and (min-width: 700px) {
+    .container-family-pb{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
+}
+
+.box-family-pb{
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+    font-size: 18px;
+    transition: ease-in-out .2s;
+}
+
+.box-family-pb:hover{
+    margin-top: -1px;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.family-tag-pb{
+    color: #ff0000;
+    font-weight:500;
+}
+
