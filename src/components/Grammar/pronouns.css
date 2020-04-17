@@ -1,0 +1,37 @@
+
+
+@media screen and (min-width: 360px) {
+    .container-pronouns-pb{
+        margin-top: 14px;
+    }
+
+    .pronouns-personal{
+        color: #ff0000;
+        font-size: 20px;
+        border-bottom: 2px solid #ff0000;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container-pronouns-pb{
+        margin-top: 24px;
+        margin-left: 8px;
+        display: flex;
+    }  
+
+    .pronouns-pb{
+        width: 25%;
+    }
+    
+    .example-pb{
+        width: 75%;
+        padding-left: 24px;
+    }
+
+    .pronouns-personal{
+        font-size: 24px;
+    }
+}
+
+
+
