@@ -1,5 +1,6 @@
 {
   "name": "front-english",
+  "homepage": "https://www.jeponce.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
