@@ -41,7 +41,7 @@ const Main = () => {
                 onOk={handleOk}
                 onCancel={handleCancel}
                 >
-                <p>Escoge una opción</p>
+                <p>Esta app es solo para web</p>
             </Modal>
         </div>
     )
