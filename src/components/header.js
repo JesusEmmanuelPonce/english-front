@@ -11,6 +11,7 @@ const Header = ({title}) => {
         <div className="header-container-pb">
             <button className="btn-header-pb" onClick={()=> history.goBack()}><LeftOutlined className="arrow-header-pb"/></button>
             <span>{title}</span>
+            <span>HOla</span>
         </div>
     )
 }
